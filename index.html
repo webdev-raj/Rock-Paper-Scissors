@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>First Project - Game</title>
+</head>
+
+<body>
+    <nav class="w-full fixed top-0 left-0 py-5 px-5">
+        <h1 class="text-3xl text-white font-bold text-left underline select-none"><span
+             class="text-emerald-500">#</span>FirstProject</h1>
+    </nav>
+    <div id="gameContainer" class="h-screen w-full
+     bg-zinc-950 flex items-center justify-center flex-col px-5">
+        <h2 class="text-5xl
+         font-bold text-center text-zinc-700
+          select-none">Rock Paper Scissors Game</h2>
+        <div class="flex items-center justify-center flex-col">
+            <h1 class="text-zinc-700
+             text-3xl mt-10 
+             font-bold">Choose your move:</h1>
+            <div class="flex items-center 
+            justify-center gap-4 mt-5">
+                <button id="rock" title="rock" class="p-5 rounded-lg bg-zinc-900 
+                text-4xl border-2 border-gray-500 select-none active:scale-95 shadow-[inset_0px_0px_17px_1px_#3f3f46]">🪨</button>
+                <button id="paper" title="paper" class="p-5 rounded-lg bg-zinc-900 
+                text-4xl border-2 border-gray-500 select-none active:scale-95 shadow-[inset_0px_0px_17px_1px_#3f3f46]">📃</button>
+                <button id="scissor" title="scissor" class="p-5 rounded-lg bg-zinc-900 
+                text-4xl border-2 border-gray-500 select-none active:scale-95 shadow-[inset_0px_0px_17px_1px_#3f3f46]">✂️</button>
+            </div>
+        </div>
+        <h1 class="text-center text-zinc-700 text-3xl font-bold 
+        mt-10">Reason - <span id="change"> Game Not Started</span></h1>
+        <h1 class="text-3xl mt-2 font-bold text-zinc-700 text-center 
+        select-none">Your score: <span title="Your Score"
+             class="text-cyan-500" id="wins">0</span> | |  Computer score: <span
+              title="Computer Score" class="text-rose-500" 
+             id="looses">0</span></h1>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
